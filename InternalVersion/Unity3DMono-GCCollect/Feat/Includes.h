@@ -69,7 +69,6 @@ namespace ImG {
 				oWndProc = (WNDPROC)SetWindowLongPtr(window, GWLP_WNDPROC, (LONG_PTR)WndProc);
 				InitImGui();
 				init = true;
-				cout << "[DevourUnlocker] Successfully Getting D3D11 Device" << endl;
 			}
 			else {
 				return oPresent(pSwapChain, SyncInterval, Flags);
